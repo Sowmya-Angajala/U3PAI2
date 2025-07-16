@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+    margin: 4rem;
+    padding: 0;
+    display: grid;
+    text-align: center;
+
+}
+form input,form select{
+    margin: 0.05rem;
+
+}
+li{
+    margin: 0.5rem 0;
+
+}
+.undo-toast{
+    background-color: yellowgreen;
+    padding: 0.5rem;
+}
+#b{
+    background-color: chocolate;
+}
+
+

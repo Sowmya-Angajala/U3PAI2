@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>QuickCart</h1>
+    <form id="itemForm">
+    <input type="text" id="name" placeholder="Item Name" required>
+    <input type="number" id="qty" placeholder="Qty" min="1" step="1" required>
+    <input type="number" id="price" placeholder="Price" step="0.01" required>
+    <select id="category" required>
+        <option>Dairy</option>
+        <option>Products</option>
+        <option >Snacks</option>
+    </select>
+    <button id='b' type="submit">Add Item</button>
+    </form>
+    <div id="filters">
+        <button data-filter="All">All</button>
+        <button data-filter="Dairy">Dairy</button>
+        <button data-filter="Products">Products</button>
+        <button data-filter="Snacks">Snacks</button>
+    </div>
+    <ul id="list"></ul>
+     <div id="totals">
+        Total Items: <span id="totalItems">0</span><br>
+        Grand cost : <span id="grandCost">0.00</span>
+    </div>
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
